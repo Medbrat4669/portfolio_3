@@ -18,8 +18,11 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 .container {
+    margin: 0 auto;
     width: 941px;
 }
+
+/* header */
 
 .header {
     background-image: url(/img/background-img.png);
@@ -57,10 +60,47 @@ h1, h2, h3, h4, h5, h6, p {
     text-align: center;
 }
 .header_p {
-    font-family: "Open Sans";
+    font-family: "Open Sans", sans-serif;
     font-weight: 400;
     font-size: 11px;
     letter-spacing: 0.34em;
     color: #fff;
     text-transform: uppercase;
+}
+
+/* nav */
+
+.nav {
+    height: 65px;
+    display: flex;
+    align-items: center;
+}
+.nav__flex {
+    display: flex;
+    justify-content: space-between;
+}
+.nav__logo {
+    width: 79.53px;
+    height: 18px;
+}
+.nav__menu-flex {
+    list-style: none;
+    display: flex;
+    gap: 40px;
+}
+
+.nav__menu-item {
+}
+
+.nav__menu-item a {
+    font-family: "Open Sans", sans-serif;
+    font-size: 12px;
+    letter-spacing: 0.09em;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #48555B;
+}
+
+.nav__menu-item a:hover {
+    color: #00A4E5;
 }
