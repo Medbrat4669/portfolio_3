@@ -104,3 +104,85 @@ h1, h2, h3, h4, h5, h6, p {
 .nav__menu-item a:hover {
     color: #00A4E5;
 }
+
+.about {
+    min-height: 344px;
+    margin-top: 57px;
+}
+.about_h3 {
+    font-family: "Open Sans", sans-serif;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 18px;
+    letter-spacing: 0.13em;
+    color: #48555B;
+}
+.about__line {
+    width: 50px;
+    height: 2px;
+    background-color: #00A4E5;
+    margin: 10px auto 0;
+}
+.about__content-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-top: 52px;
+}
+.about__text {
+    width: 405.08px;
+}
+.about_h4 {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    letter-spacing: 0.01em;
+    color: #48555b;
+}
+.about_h4 span {
+    letter-spacing: 0.01em;
+    color: #16ace8;
+}
+
+.about_p {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 177%;
+    letter-spacing: 0.01em;
+    color: #48555b;
+    margin-top: 30px;
+}
+.about__card_items-flex {
+    display: flex;
+    gap: 20px;
+    
+}
+.about__card-item {
+    width: 140px;
+    height: 224px;
+}
+
+.about__card-item:nth-child(1) {
+    background-image: url(/img/plan.png);
+}
+
+.about__card-item:nth-child(2) {
+    background-image: url(/img/manage.png);
+}
+
+.about__card-item:nth-child(3) {
+    background-image: url(/img/deliver.png);
+}
+.about_h2 {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 800;
+    font-size: 24px;
+    line-height: 29px;
+    letter-spacing: 0.01em;
+    text-transform: uppercase;
+    color: #fff;
+    padding: 15px 0 0 15px;
+
+}
