@@ -370,6 +370,7 @@ h1, h2, h3, h4, h5, h6, p {
     color: #fff;
     border: none;
     text-transform: uppercase;
+    cursor: pointer;
 }
 
 /*.footer */
@@ -472,3 +473,18 @@ h1, h2, h3, h4, h5, h6, p {
 .footer__icons-buttons {
 }
 
+/* copyright */
+.copyright {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #171819;
+    height: 60px;
+}
+.copyright_p {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    font-size: 11px;
+    letter-spacing: 0.08em;
+    color: #fff;
+}
