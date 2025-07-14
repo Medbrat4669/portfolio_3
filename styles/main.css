@@ -446,8 +446,9 @@ h1, h2, h3, h4, h5, h6, p {
     align-items: center;
 }
 .newsletter__content-flex {
-    width: 685px;
-    height: 40px;
+    max-width: 685px;
+    width: 100%;
+    min-height: 40px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -490,6 +491,34 @@ h1, h2, h3, h4, h5, h6, p {
     border: none;
     text-transform: uppercase;
     cursor: pointer;
+}
+
+@media screen and (max-width: 992px) {
+    .newsletter__content-flex {
+        flex-direction: column;
+        flex-wrap: wrap;
+        gap: 10px;
+        height: auto;
+    }
+
+    .newsletter__flex {
+        height: auto;
+        padding: 10px;
+    }
+    .newsletter__form {
+        height: auto;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+
+    }
+
+    .newsletter__email {
+        width: 100%;
+    }
+
+    .newsletter__button {
+        margin: 10px auto;
 }
 
 /*.footer */
