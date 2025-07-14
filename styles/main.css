@@ -13,13 +13,14 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6, p {
-  padding: 0;
-  margin: 0;
+    padding: 0;
+    margin: 0;
 }
 
 .container {
     margin: 0 auto;
-    width: 941px;
+    max-width: 941px;
+    width: 100%;
 }
 
 /* header */
@@ -67,6 +68,16 @@ h1, h2, h3, h4, h5, h6, p {
     color: #fff;
     text-transform: uppercase;
 }
+@media screen and (max-width: 768px) {
+    .header_h1 {
+        font-size: 50px;
+        text-align: center;
+    }
+
+    .header_h4 {
+        margin: 0 10px;
+    }
+}
 
 /* nav */
 
@@ -106,6 +117,45 @@ h1, h2, h3, h4, h5, h6, p {
 .nav__menu-item a:hover {
     color: #00A4E5;
 }
+
+@media screen and (max-width: 1200px) {
+    .nav__flex {
+        margin: 0 30px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .nav__flex {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav__logo {
+        margin-bottom: 10px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .nav__menu-flex {
+        gap: 10px;
+        margin: 0 5px;
+    }
+}
+
+@media screen and (max-width: 300px) {
+    .nav__logo {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .nav {
+        height: auto;
+    }
+    .nav__menu-flex {
+        flex-direction: column;
+        margin-bottom: 10px;
+    }
+}
+/* about */
 
 .about {
     min-height: 344px;
