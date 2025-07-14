@@ -183,7 +183,8 @@ h1, h2, h3, h4, h5, h6, p {
     margin-top: 52px;
 }
 .about__text {
-    width: 405.08px;
+    max-width: 405.08px;
+    width: 100%;
 }
 .about_h4 {
     font-family: "Open Sans", sans-serif;
@@ -237,6 +238,36 @@ h1, h2, h3, h4, h5, h6, p {
     color: #fff;
     padding: 15px 0 0 15px;
 
+}
+
+@media screen and (max-width: 992px) {
+    .about__content-flex {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about__card_items-flex {
+        margin: 20px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .about__card_items-flex {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        padding: 0 15px;
+    }
+
+    .about__card-item {
+        max-width: 300px;
+        width: 100%;
+        background-size: cover;
+    }
+
+    .about__text {
+        padding: 0 15px;
+    }
 }
 
 /* services */
