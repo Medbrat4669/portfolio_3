@@ -602,6 +602,10 @@ h1, h2, h3, h4, h5, h6, p {
     color: #fff;
 }
 
+.footer__button:hover {
+    color: #00A4E5;
+}
+
 .footer__icons-a {
     display: flex;
     margin-top: 72px;
@@ -611,6 +615,10 @@ h1, h2, h3, h4, h5, h6, p {
 
 .footer__icons-a i {
     color: #fff;
+}
+
+.footer__icons-a i:hover {
+    color: #00A4E5;
 }
 
 .footer__contacts {
